@@ -1,0 +1,14 @@
+services:
+  sparklepawz:
+    build: .
+    container_name: rainbow-sparkle-pawz
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      # Persist guestbook entries & visitor counter across restarts
+      - ./data:/app/data
+      # Mount your music folder — drop mp3/ogg/flac/etc files in here
+      - ./music:/app/music
+    environment:
+      - PORT=3000

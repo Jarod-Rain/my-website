@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>~*+xX R4iNb0w_SpArKlE_P4wZ Xx+*~</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&family=VT323&family=Fredoka+One&display=swap');
+
+  :root {
+    --hot-pink: #ff69b4;
+    --neon-pink: #ff1493;
+    --lime: #39ff14;
+    --cyan: #00ffff;
+    --purple: #bf00ff;
+    --yellow: #fff200;
+    --orange: #ff6600;
+    --magenta: #ff00ff;
+    --sky: #87ceeb;
+    --sidebar-w: 210px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'VT323', 'Comic Sans MS', cursive;
+    font-size: 18px;
+    color: #fff;
+    min-height: 100vh;
+    overflow-x: hidden;
+    cursor: crosshair;
+    background-color: #1a0a2e;
+    background-image: repeating-conic-gradient(#ff69b480 0% 25%, #00ffff40 0% 50%);
+    background-size: 40px 40px;
+  }
+
+  /* ── SPARKLE CANVAS ─────────────────────────────────────────── */
+  #sparkle-canvas {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+  /* ── TOP BANNER ─────────────────────────────────────────────── */
+  .top-banner {
+    background: linear-gradient(90deg, #ff0000, #ff7700, #ffff00, #00ff00, #0000ff, #8b00ff, #ff0000);
+    background-size: 300% 100%;
+    animation: rainbowSlide 3s linear infinite;
+    padding: 4px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 1px 1px 0 #000;
+    letter-spacing: 2px;
+  }
+  @keyframes rainbowSlide {
+    0%   { background-position: 0% 50%; }
+    100% { background-position: 300% 50%; }
+  }
+
+  /* ── MARQUEE ────────────────────────────────────────────────── */
+  .marquee-bar {
+    background: #000;
+    border-top: 3px solid var(--hot-pink);
+    border-bottom: 3px solid var(--cyan);
+    padding: 6px 0;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .marquee-content {
+    display: inline-block;
+    animation: marqueeScroll 20s linear infinite;
+    font-family: 'Pixelify Sans', monospace;
+    font-size: 16px;
+    color: var(--yellow);
+  }
+  @keyframes marqueeScroll {
+    0%   { transform: translateX(100vw); }
+    100% { transform: translateX(-200%); }
+  }
+
+  /* ── HEADER ─────────────────────────────────────────────────── */
+  .site-header {
+    text-align: center;
+    padding: 30px 20px 20px;
+    background: linear-gradient(180deg, #1a0033 0%, #330066 50%, #1a0033 100%);
+    border-bottom: 4px dashed var(--magenta);
+    position: relative;
+    overflow: hidden;
+  }
+  .site-header::before {
+    content: '★ ♥ ★ ♥ ★ ♥ ★ ♥ ★ ♥ ★ ♥ ★ ♥ ★ ♥ ★ ♥ ★ ♥ ★ ♥ ★ ♥ ★ ♥ ★ ♥ ★';
+    display: block;
+    font-size: 12px;
+    color: var(--hot-pink);
+    animation: blinky 0.8s step-end infinite;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+  }
+  @keyframes blinky {
+    0%, 100% { opacity: 1; }
+    50%      { opacity: 0; }
+  }
+  .site-title {
+    font-family: 'Fredoka One', cursive;
+    font-size: clamp(28px, 6vw, 58px);
+    background: linear-gradient(90deg, #ff0000, #ff7700, #ffff00, #00ff00, #00ffff, #0000ff, #8b00ff);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: rainbowText 2s linear infinite;
+    filter: drop-shadow(0 0 10px rgba(255,105,180,.8)) drop-shadow(0 0 20px rgba(0,255,255,.5));
+    line-height: 1.2;
+  }
+  @keyframes rainbowText {
+    0%   { background-position: 0% center; }
+    100% { background-position: 200% center; }
+  }
+  .site-subtitle {
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    color: var(--cyan);
+    margin-top: 8px;
+    text-shadow: 0 0 8px var(--cyan), 0 0 15px var(--purple);
+  }
+  .header-decorations {
+    margin-top: 12px;
+    font-size: 22px;
+    animation: floatUpDown 2s ease-in-out infinite;
+  }
+  @keyframes floatUpDown {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-6px); }
+  }
+
+  /* ── THREE-COLUMN LAYOUT ────────────────────────────────────── */
+  .page-wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 0;
+    padding: 0 10px;
+  }
+
+  /* ── SHARED SIDEBAR STYLES ──────────────────────────────────── */
+  .sidebar-left, .sidebar-right {
+    width: var(--sidebar-w);
+    min-width: var(--sidebar-w);
+    padding: 15px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .sidebar-box {
+    background: rgba(0,0,0,0.7);
+    border: 3px solid;
+    border-image: linear-gradient(180deg, var(--hot-pink), var(--purple), var(--cyan)) 1;
+    padding: 12px;
+    position: relative;
+  }
+  .sidebar-box::before {
+    content: '';
+    position: absolute;
+    top: -1px; left: -1px; right: -1px; bottom: -1px;
+    background: linear-gradient(45deg, var(--hot-pink), var(--purple), var(--cyan), var(--hot-pink));
+    background-size: 300% 300%;
+    animation: borderGlow 4s ease infinite;
+    z-index: -1;
+    filter: blur(4px);
+    opacity: 0.4;
+  }
+  @keyframes borderGlow {
+    0%, 100% { background-position: 0% 50%; }
+    50%      { background-position: 100% 50%; }
+  }
+  .sidebar-title {
+    font-family: 'Pixelify Sans', monospace;
+    font-size: 18px;
+    color: var(--yellow);
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 0 0 6px var(--yellow);
+    border-bottom: 2px dotted var(--hot-pink);
+    padding-bottom: 6px;
+  }
+  .sidebar-title::before,
+  .sidebar-title::after {
+    content: ' ★ ';
+    color: var(--hot-pink);
+    font-size: 12px;
+  }
+
+  /* ── LEFT SIDEBAR ───────────────────────────────────────────── */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .nav-links li a {
+    display: block;
+    padding: 6px 10px;
+    color: var(--cyan);
+    text-decoration: none;
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+    transition: all 0.2s;
+    border-left: 3px solid transparent;
+  }
+  .nav-links li a::before { content: '♥ '; color: var(--hot-pink); font-size: 12px; }
+  .nav-links li a:hover {
+    color: var(--hot-pink);
+    background: rgba(255,105,180,0.15);
+    border-left-color: var(--hot-pink);
+    text-shadow: 0 0 8px var(--hot-pink);
+    padding-left: 16px;
+  }
+
+  .about-me-text {
+    font-size: 15px;
+    color: #dda0dd;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .about-me-text .name-highlight {
+    color: var(--hot-pink);
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    text-shadow: 0 0 10px var(--hot-pink);
+  }
+  .cat-ascii {
+    font-family: 'VT323', monospace;
+    font-size: 14px;
+    color: var(--hot-pink);
+    text-align: center;
+    line-height: 1.2;
+    white-space: pre;
+    text-shadow: 0 0 6px var(--hot-pink);
+  }
+
+  .blinkies-area { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
+  .blinkie {
+    display: inline-block;
+    padding: 3px 8px;
+    font-size: 11px;
+    font-family: 'Pixelify Sans', monospace;
+    border: 2px solid;
+    animation: blinkiePulse 1.5s step-end infinite;
+    white-space: nowrap;
+  }
+  .blinkie-1 { background:#ff0066; border-color:#ff99cc; color:#fff; }
+  .blinkie-2 { background:#6600cc; border-color:#cc99ff; color:#fff; }
+  .blinkie-3 { background:#009933; border-color:#66ff99; color:#fff; }
+  .blinkie-4 { background:#0066ff; border-color:#99ccff; color:#fff; }
+  .blinkie-5 { background:#ff6600; border-color:#ffcc66; color:#fff; }
+  .blinkie-6 { background:#cc0099; border-color:#ff66cc; color:#fff; }
+  @keyframes blinkiePulse { 0%,100%{opacity:1;} 50%{opacity:.6;} }
+
+  .stamps-area { display: flex; flex-wrap: wrap; gap: 4px; justify-content: center; }
+  .stamp {
+    width: 88px; height: 31px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Pixelify Sans', monospace;
+    font-size: 11px; font-weight: 700;
+    color: #fff; text-shadow: 1px 1px 0 #000;
+    border: 1px solid rgba(255,255,255,.3);
+    cursor: pointer;
+  }
+  .stamp-1 { background:linear-gradient(135deg,#ff0000,#990000); }
+  .stamp-2 { background:linear-gradient(135deg,#0066ff,#003399); }
+  .stamp-3 { background:linear-gradient(135deg,#ff6600,#993300); }
+  .stamp-4 { background:linear-gradient(135deg,#9900cc,#4d0066); }
+  .stamp-5 { background:linear-gradient(135deg,#00cc00,#006600); }
+  .stamp-6 { background:linear-gradient(135deg,#ff0099,#660033); }
+
+  .friend-avatar {
+    width: 40px; height: 40px; border-radius: 50%;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 20px; border: 2px solid var(--hot-pink);
+    margin: 3px; cursor: pointer; transition: transform .2s, box-shadow .2s;
+  }
+  .friend-avatar:hover { transform: scale(1.2); box-shadow: 0 0 12px var(--hot-pink); }
+  .fa-1{background:#330033;} .fa-2{background:#003333;} .fa-3{background:#333300;}
+  .fa-4{background:#330000;} .fa-5{background:#000033;}
+
+  .under-construction {
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    padding: 8px;
+    background: repeating-linear-gradient(45deg,#000 0px,#000 10px,#ffcc00 10px,#ffcc00 20px);
+    font-family: 'Pixelify Sans', monospace; font-size: 14px;
+    color: #fff; text-shadow: 1px 1px 0 #000;
+  }
+  .construction-icon { font-size: 22px; animation: wobble .5s ease-in-out infinite alternate; }
+  @keyframes wobble { 0%{transform:rotate(-10deg);} 100%{transform:rotate(10deg);} }
+
+  /* ── RIGHT SIDEBAR — MUSIC PLAYER ──────────────────────────── */
+  .music-player {
+    background: rgba(0,0,0,0.85);
+    padding: 10px;
+  }
+  .music-player-title {
+    font-family: 'Pixelify Sans', monospace;
+    font-size: 13px; color: var(--purple); margin-bottom: 8px; text-align: center;
+  }
+  .music-visualizer {
+    display: flex; justify-content: center; align-items: flex-end;
+    gap: 3px; height: 30px; margin-bottom: 8px;
+  }
+  .music-bar {
+    width: 6px;
+    background: linear-gradient(to top, var(--hot-pink), var(--cyan));
+    border-radius: 2px 2px 0 0;
+    transition: height 0.15s ease;
+  }
+  .music-bar.idle { animation: musicBounce .6s ease-in-out infinite alternate; }
+  .music-bar:nth-child(1){height:10px;animation-delay:0s;}
+  .music-bar:nth-child(2){height:18px;animation-delay:.1s;}
+  .music-bar:nth-child(3){height:12px;animation-delay:.2s;}
+  .music-bar:nth-child(4){height:24px;animation-delay:.05s;}
+  .music-bar:nth-child(5){height:14px;animation-delay:.15s;}
+  .music-bar:nth-child(6){height:20px;animation-delay:.25s;}
+  .music-bar:nth-child(7){height:16px;animation-delay:.08s;}
+  .music-bar:nth-child(8){height:22px;animation-delay:.18s;}
+  @keyframes musicBounce {
+    0%  {transform:scaleY(.4);}
+    100%{transform:scaleY(1.2);}
+  }
+
+  .now-playing-label {
+    font-family: 'VT323', monospace; font-size: 14px;
+    color: var(--magenta); text-align: center;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    margin-bottom: 6px;
+  }
+  .player-controls {
+    display: flex; justify-content: center; align-items: center; gap: 6px;
+    margin-bottom: 6px;
+  }
+  .player-btn {
+    background: none; border: 2px solid var(--hot-pink); color: var(--hot-pink);
+    font-size: 16px; width: 32px; height: 32px; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: all .2s; font-family: 'VT323', monospace;
+  }
+  .player-btn:hover {
+    background: var(--hot-pink); color: #000;
+    box-shadow: 0 0 10px var(--hot-pink);
+  }
+  .player-btn.active {
+    background: var(--hot-pink); color: #000;
+  }
+
+  .progress-bar-container {
+    width: 100%; height: 8px;
+    background: #222; border: 1px solid #555;
+    cursor: pointer; margin-bottom: 6px;
+    position: relative;
+  }
+  .progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--hot-pink), var(--cyan));
+    width: 0%; transition: width .1s linear;
+  }
+
+  .volume-row {
+    display: flex; align-items: center; gap: 6px; justify-content: center;
+    font-family: 'VT323', monospace; font-size: 14px; color: var(--cyan);
+  }
+  .volume-slider {
+    -webkit-appearance: none; appearance: none;
+    width: 70px; height: 6px; background: #333; outline: none;
+    border-radius: 3px; cursor: pointer;
+  }
+  .volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none; width: 12px; height: 12px;
+    background: var(--hot-pink); border-radius: 50%; cursor: pointer;
+  }
+  .volume-slider::-moz-range-thumb {
+    width: 12px; height: 12px;
+    background: var(--hot-pink); border-radius: 50%; cursor: pointer; border: none;
+  }
+
+  .playlist {
+    max-height: 150px; overflow-y: auto; margin-top: 8px;
+    border-top: 1px dashed var(--purple); padding-top: 6px;
+  }
+  .playlist::-webkit-scrollbar { width: 6px; }
+  .playlist::-webkit-scrollbar-track { background: #111; }
+  .playlist::-webkit-scrollbar-thumb { background: var(--purple); }
+
+  .playlist-item {
+    padding: 4px 6px; cursor: pointer; font-family: 'VT323', monospace;
+    font-size: 14px; color: #aaa; white-space: nowrap; overflow: hidden;
+    text-overflow: ellipsis; transition: all .2s;
+  }
+  .playlist-item:hover { color: var(--cyan); background: rgba(0,255,255,.08); }
+  .playlist-item.active { color: var(--hot-pink); text-shadow: 0 0 6px var(--hot-pink); }
+  .playlist-item::before { content: '♪ '; color: var(--purple); }
+  .playlist-item.active::before { content: '▶ '; color: var(--hot-pink); }
+
+  .playlist-empty {
+    text-align: center; font-size: 13px; color: #666;
+    font-family: 'VT323', monospace; padding: 10px 4px;
+    line-height: 1.5;
+  }
+  .playlist-empty span { color: var(--cyan); }
+
+  /* ── RIGHT SIDEBAR — VISITOR COUNTER ───────────────────────── */
+  .visitor-counter {
+    text-align: center; padding: 8px;
+    font-family: 'VT323', monospace; color: var(--lime); font-size: 14px;
+  }
+  .counter-display {
+    display: inline-block; background: #000;
+    border: 2px inset #555; padding: 4px 12px;
+    font-size: 22px; color: var(--lime); letter-spacing: 4px;
+    margin-top: 4px; text-shadow: 0 0 6px var(--lime);
+    font-family: 'VT323', monospace;
+  }
+
+  /* ── RIGHT SIDEBAR — GUESTBOOK ─────────────────────────────── */
+  .gb-form { display: flex; flex-direction: column; gap: 6px; margin-bottom: 10px; }
+  .gb-input, .gb-textarea {
+    background: #111; border: 2px solid var(--purple);
+    color: var(--cyan); font-family: 'VT323', monospace; font-size: 16px;
+    padding: 6px 8px; outline: none; resize: none;
+  }
+  .gb-input::placeholder, .gb-textarea::placeholder { color: #666; }
+  .gb-input:focus, .gb-textarea:focus {
+    border-color: var(--hot-pink); box-shadow: 0 0 8px rgba(255,105,180,.4);
+  }
+  .gb-submit {
+    background: rgba(255,105,180,.2); border: 2px solid var(--hot-pink);
+    color: var(--hot-pink); font-family: 'VT323', monospace; font-size: 18px;
+    padding: 6px; cursor: pointer; transition: all .2s;
+  }
+  .gb-submit:hover {
+    background: var(--hot-pink); color: #000;
+    box-shadow: 0 0 12px var(--hot-pink);
+  }
+  .gb-submit:disabled { opacity: .5; cursor: not-allowed; }
+  .gb-status {
+    text-align: center; font-size: 14px; min-height: 18px;
+    font-family: 'VT323', monospace;
+  }
+  .gb-status.success { color: var(--lime); }
+  .gb-status.error   { color: #ff4444; }
+
+  .gb-entries { max-height: 250px; overflow-y: auto; }
+  .gb-entries::-webkit-scrollbar { width: 6px; }
+  .gb-entries::-webkit-scrollbar-track { background: #111; }
+  .gb-entries::-webkit-scrollbar-thumb { background: var(--hot-pink); }
+
+  .gb-entry {
+    border-bottom: 1px dashed #333; padding: 8px 0;
+    font-size: 14px; animation: fadeIn .3s ease;
+  }
+  @keyframes fadeIn { from{opacity:0;transform:translateY(-4px);} to{opacity:1;transform:none;} }
+  .gb-entry-name {
+    color: var(--cyan); font-family: 'Pixelify Sans', monospace;
+    font-size: 14px;
+  }
+  .gb-entry-date {
+    color: #555; font-size: 12px; margin-left: 6px;
+  }
+  .gb-entry-msg {
+    color: #ccc; font-style: italic; margin-top: 2px;
+    word-wrap: break-word;
+  }
+
+  /* ── MAIN CONTENT ───────────────────────────────────────────── */
+  .main-content { flex: 1; padding: 15px; min-width: 0; }
+
+  .blog-post {
+    background: rgba(0,0,0,0.75);
+    border: 3px solid var(--hot-pink);
+    margin-bottom: 20px;
+    position: relative; overflow: hidden;
+  }
+  .blog-post::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 30px;
+    background: linear-gradient(90deg,
+      #ff0000 0%,#ff7700 14%,#ffff00 28%,#00ff00 42%,
+      #00ffff 57%,#0000ff 71%,#8b00ff 85%,#ff0000 100%);
+    background-size: 200% 100%;
+    animation: rainbowSlide 3s linear infinite;
+  }
+  .post-header { padding: 38px 15px 8px; border-bottom: 2px dashed var(--purple); }
+  .post-title {
+    font-family: 'Fredoka One', cursive; font-size: 24px;
+    color: var(--hot-pink);
+    text-shadow: 0 0 10px var(--hot-pink), 2px 2px 0 var(--purple);
+  }
+  .post-date {
+    font-family: 'VT323', monospace; font-size: 14px;
+    color: var(--cyan); margin-top: 4px;
+  }
+  .post-date::before { content: '📅 '; }
+  .post-mood {
+    font-size: 14px; color: var(--yellow); font-family: 'VT323', monospace;
+  }
+  .post-body {
+    padding: 15px; font-size: 17px; line-height: 1.7; color: #e0c0e0;
+  }
+  .post-body p { margin-bottom: 12px; }
+  .post-body .highlight {
+    color: var(--hot-pink); font-weight: bold; text-shadow: 0 0 5px var(--hot-pink);
+  }
+  .post-body .big-text {
+    font-family: 'Fredoka One', cursive; font-size: 22px;
+    color: var(--cyan); text-shadow: 0 0 8px var(--cyan);
+  }
+  .post-footer {
+    padding: 8px 15px; border-top: 2px dashed var(--purple);
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 14px; color: #999;
+  }
+  .post-tags span {
+    display: inline-block; background: rgba(255,105,180,.2);
+    border: 1px solid var(--hot-pink); padding: 2px 8px; margin: 2px;
+    font-size: 13px; color: var(--hot-pink); font-family: 'VT323', monospace;
+  }
+  .post-comments-link {
+    color: var(--cyan); text-decoration: none;
+    font-family: 'VT323', monospace; font-size: 16px;
+  }
+  .post-comments-link:hover { color: var(--hot-pink); text-shadow: 0 0 8px var(--hot-pink); }
+
+  /* ── DIVIDERS & DECORATIONS ─────────────────────────────────── */
+  .sparkle-divider {
+    text-align: center; padding: 12px 0; font-size: 14px;
+    color: var(--hot-pink); letter-spacing: 6px;
+    animation: floatUpDown 3s ease-in-out infinite; user-select: none;
+  }
+  .rainbow-checker-panel {
+    height: 12px;
+    background:
+      repeating-conic-gradient(#ff69b4 0% 25%, #00ffff 0% 50%) 0 0 / 12px 12px,
+      repeating-conic-gradient(#bf00ff 0% 25%, #ffff00 0% 50%) 6px 6px / 12px 12px;
+    background-size: 12px 12px;
+  }
+  .paw-trail {
+    display: flex; justify-content: center; gap: 20px; padding: 10px; font-size: 18px; opacity: .6;
+  }
+  .paw-trail span { animation: pawStep 1.5s ease-in-out infinite; }
+  .paw-trail span:nth-child(1){animation-delay:0s;}
+  .paw-trail span:nth-child(2){animation-delay:.2s;}
+  .paw-trail span:nth-child(3){animation-delay:.4s;}
+  .paw-trail span:nth-child(4){animation-delay:.6s;}
+  .paw-trail span:nth-child(5){animation-delay:.8s;}
+  @keyframes pawStep {
+    0%,100%{opacity:.3;transform:scale(.8);}
+    50%{opacity:1;transform:scale(1.1);}
+  }
+  .floating-element {
+    position: fixed; pointer-events: none; z-index: 100;
+    animation: floatAround 15s ease-in-out infinite; font-size: 24px; opacity: .5;
+  }
+  @keyframes floatAround {
+    0%  {transform:translate(0,0) rotate(0deg);}
+    25% {transform:translate(30px,-40px) rotate(90deg);}
+    50% {transform:translate(-20px,-80px) rotate(180deg);}
+    75% {transform:translate(40px,-30px) rotate(270deg);}
+    100%{transform:translate(0,0) rotate(360deg);}
+  }
+
+  /* ── FOOTER ─────────────────────────────────────────────────── */
+  .bottom-bar {
+    background: #000;
+    border-top: 4px solid;
+    border-image: linear-gradient(90deg,var(--hot-pink),var(--cyan),var(--purple),var(--yellow),var(--hot-pink)) 1;
+    padding: 20px; text-align: center;
+  }
+  .bottom-bar p {
+    font-family: 'VT323', monospace; font-size: 16px; color: #888; margin: 4px 0;
+  }
+  .bottom-bar .site-owner { color: var(--hot-pink); text-shadow: 0 0 5px var(--hot-pink); }
+  .bottom-bar .heart-trail {
+    color: var(--hot-pink); font-size: 14px; letter-spacing: 4px;
+    animation: blinky 1s step-end infinite;
+  }
+
+  /* ── RESPONSIVE ─────────────────────────────────────────────── */
+  @media (max-width: 950px) {
+    .page-wrapper { flex-direction: column; }
+    .sidebar-left, .sidebar-right {
+      width: 100%; min-width: 100%;
+      flex-direction: row; flex-wrap: wrap; justify-content: center;
+    }
+    .sidebar-left .sidebar-box,
+    .sidebar-right .sidebar-box {
+      width: calc(50% - 10px); min-width: 200px;
+    }
+  }
+  @media (max-width: 550px) {
+    .sidebar-left .sidebar-box,
+    .sidebar-right .sidebar-box {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<canvas id="sparkle-canvas"></canvas>
+
+<!-- FLOATING DECORATIONS -->
+<div class="floating-element" style="top:10%;left:5%;animation-duration:18s;">✦</div>
+<div class="floating-element" style="top:30%;right:3%;animation-duration:14s;animation-delay:-3s;">♥</div>
+<div class="floating-element" style="top:60%;left:8%;animation-duration:20s;animation-delay:-7s;">🐾</div>
+<div class="floating-element" style="top:80%;right:6%;animation-duration:16s;animation-delay:-5s;">★</div>
+<div class="floating-element" style="top:45%;left:2%;animation-duration:22s;animation-delay:-10s;">🌟</div>
+
+<!-- TOP BANNER -->
+<div class="top-banner">★ ~ W E L C O M E ~ T O ~ M Y ~ S I T E ~ ★</div>
+
+<!-- MARQUEE -->
+<div class="marquee-bar">
+  <div class="marquee-content">
+    ♥ ★ ♥ WELCOME 2 MY PAGE!! ♥ ★ ♥ &nbsp;&nbsp;&nbsp;
+    dun steal my stuff or ill send my army of sparkle cats after u!! &nbsp;&nbsp;&nbsp;
+    ♥ ★ ♥ BEST VIEWED IN 1024x768 ♥ ★ ♥ &nbsp;&nbsp;&nbsp;
+    OMG tysm 4 visiting!! sign my guestbook!! &nbsp;&nbsp;&nbsp;
+    ★ ♥ ★ NO HATERS ALLOWED ★ ♥ ★ &nbsp;&nbsp;&nbsp;
+    🐱 *nuzzles* 🐱 &nbsp;&nbsp;&nbsp;
+    ♥ i &lt;3 my friends ♥ &nbsp;&nbsp;&nbsp;
+    rawr means i love u in dinosaur XD &nbsp;&nbsp;&nbsp;
+  </div>
+</div>
+
+<div class="rainbow-checker-panel"></div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <h1 class="site-title">~*+xX R4iNb0w SpArKlE P4wZ Xx+*~</h1>
+  <p class="site-subtitle">// the official den of sparklecat2006 //</p>
+  <div class="header-decorations">✧･ﾟ: *✧･ﾟ:* 🐱 *:･ﾟ✧*:･ﾟ✧</div>
+</header>
+
+<div class="paw-trail">
+  <span>🐾</span><span>🐾</span><span>🐾</span><span>🐾</span><span>🐾</span>
+</div>
+
+<!-- ═══════════ THREE-COLUMN LAYOUT ═══════════ -->
+<div class="page-wrapper">
+
+  <!-- ──────── LEFT SIDEBAR ──────── -->
+  <aside class="sidebar-left">
+
+    <div class="sidebar-box">
+      <div class="sidebar-title">Navigation</div>
+      <ul class="nav-links">
+        <li><a href="index.html">H0ME</a></li>
+        <li><a href="about.html">AB0UT ME!!</a></li>
+        <li><a href="art.html">MY ART ~*</a></li>
+        <li><a href="ocs.html">MY OCs!!</a></li>
+        <li><a href="shrines.html">SHRINES</a></li>
+        <li><a href="links.html">C00L LINKS</a></li>
+        <li><a href="guestbook.html">GUESTB00K</a></li>
+        <li><a href="blog.html">BL0G</a></li>
+      </ul>
+    </div>
+
+    <div class="sidebar-box">
+      <div class="sidebar-title">About Me!!</div>
+      <div class="about-me-text">
+        <div class="cat-ascii">
+  /\_/\
+ ( o.o )
+  > ^ <
+ /|   |\
+(_|   |_)</div>
+        <br>
+        <span class="name-highlight">sparklecat2006</span><br>
+        ♥ they/them ♥<br>
+        artist & cat lover<br>
+        rawr XD<br>
+        🌈🐱✨
+      </div>
+    </div>
+
+    <div class="sidebar-box">
+      <div class="sidebar-title">Blinkies!!</div>
+      <div class="blinkies-area">
+        <span class="blinkie blinkie-1">I ♥ CATS</span>
+        <span class="blinkie blinkie-2">IM SCENE</span>
+        <span class="blinkie blinkie-3">RAWRR XD</span>
+        <span class="blinkie blinkie-4">NYAN~</span>
+        <span class="blinkie blinkie-5">:3 MEOW</span>
+        <span class="blinkie blinkie-6">♥ FURRY ♥</span>
+      </div>
+    </div>
+
+    <div class="sidebar-box">
+      <div class="sidebar-title">Buttons</div>
+      <div class="stamps-area">
+        <div class="stamp stamp-1">FIREFOX</div>
+        <div class="stamp stamp-2">MYSPACE</div>
+        <div class="stamp stamp-3">GIMP FTW</div>
+        <div class="stamp stamp-4">FREEWEBS</div>
+        <div class="stamp stamp-5">HTML</div>
+        <div class="stamp stamp-6">GAY RIGHTS</div>
+      </div>
+    </div>
+
+    <div class="sidebar-box">
+      <div class="sidebar-title">My Friends!!</div>
+      <div style="text-align:center;">
+        <a href="friends.html" class="friend-avatar fa-1" title="xx_shadowwolf_xx">🐺</a>
+        <a href="friends.html" class="friend-avatar fa-2" title="~NeonKitty~">🐱</a>
+        <a href="friends.html" class="friend-avatar fa-3" title="*StarPup*">🐶</a>
+        <a href="friends.html" class="friend-avatar fa-4" title="xXDarkAngelXx">😈</a>
+        <a href="friends.html" class="friend-avatar fa-5" title="~BlueFox~">🦊</a>
+      </div>
+    </div>
+
+    <div class="under-construction">
+      <span class="construction-icon">🚧</span>
+      UNDER CONSTRUCTION
+      <span class="construction-icon">🚧</span>
+    </div>
+
+  </aside>
+
+  <!-- ──────── MAIN CONTENT ──────── -->
+  <main class="main-content">
+
+    <!-- BLOG POST 1 -->
+    <article class="blog-post">
+      <div class="post-header">
+        <h2 class="post-title">OMG new art!! + life update~*</h2>
+        <div class="post-date">March 28, 2026 @ 11:42pm</div>
+        <div class="post-mood">current mood: ✨ sparkly ✨ | listening to: nightcore mix #47</div>
+      </div>
+      <div class="post-body">
+        <p>hiii everyoneee!! ♥♥♥ omg its been like forever since i posted here lol. i've been SO busy working on new art for my sparklesona <span class="highlight">~*Rainbow Stardust*~</span> and she's looking SO CUTE u guys!! i added like 47 more accessories and a new tail and wings that r rainbow gradient obviously lolol</p>
+        <p><span class="big-text">☆ ALSO ☆</span> i finally figured out how 2 host this site on my own server?? like a REAL server not just freewebs lmaooo. it was kinda complicated but i feel like such a h4x0r now XD</p>
+        <p>anyway pls sign my guestbook if u visit!! it makes me so happy 2 see ppl actually come here :'3 also if u want 2 be added to my friends list just ask!! i love making new friends~</p>
+        <p>♥♥♥ stay sparkly!! ♥♥♥</p>
+        <p style="font-size:14px;color:#999;">xoxo sparklecat2006 ~*</p>
+      </div>
+      <div class="post-footer">
+        <div class="post-tags"><span>#art</span><span>#sparklesona</span><span>#life</span><span>#server</span></div>
+        <a href="comments.html" class="post-comments-link">💬 3 comments</a>
+      </div>
+    </article>
+
+    <div class="sparkle-divider">✧ ♥ ✦ ★ ✧ ♥ ✦ ★ ✧ ♥ ✦ ★ ✧ ♥ ✦ ★</div>
+
+    <!-- BLOG POST 2 -->
+    <article class="blog-post">
+      <div class="post-header">
+        <h2 class="post-title">tag from shadowwolf!! :3</h2>
+        <div class="post-date">March 25, 2026 @ 3:17pm</div>
+        <div class="post-mood">current mood: 🐱 catlike 🐱 | listening to: my chemical romance</div>
+      </div>
+      <div class="post-body">
+        <p><span class="highlight">xx_shadowwolf_xx</span> tagged me in a survey!! ty bestie ♥♥</p>
+        <p>
+          <strong style="color:var(--cyan);">♥ NAME:</strong> sparklecat lol<br>
+          <strong style="color:var(--cyan);">♥ AGE:</strong> wouldnt u like 2 know ;3<br>
+          <strong style="color:var(--cyan);">♥ FAV COLOR:</strong> ALL OF THEM (rainbow duh)<br>
+          <strong style="color:var(--cyan);">♥ FAV ANIMAL:</strong> CATS CATS CATS 🐱🐱🐱<br>
+          <strong style="color:var(--cyan);">♥ FAV FOOD:</strong> pizza & pocky!!<br>
+          <strong style="color:var(--cyan);">♥ FAV BAND:</strong> MCR, paramore, nightcore remixes of everything lol<br>
+          <strong style="color:var(--cyan);">♥ CRUSH:</strong> wouldnt u like 2 know!! 😳<br>
+          <strong style="color:var(--cyan);">♥ FAV OC:</strong> Rainbow Stardust obvi~*
+        </p>
+        <p>i tag: <span class="highlight">~NeonKitty~</span>, <span class="highlight">*StarPup*</span>, and <span class="highlight">~BlueFox~</span>!!</p>
+      </div>
+      <div class="post-footer">
+        <div class="post-tags"><span>#tag</span><span>#survey</span><span>#friends</span></div>
+        <a href="comments.html" class="post-comments-link">💬 7 comments</a>
+      </div>
+    </article>
+
+    <div class="sparkle-divider">🐾 ♥ 🐾 ♥ 🐾 ♥ 🐾 ♥ 🐾 ♥ 🐾 ♥ 🐾</div>
+
+    <!-- BLOG POST 3 -->
+    <article class="blog-post">
+      <div class="post-header">
+        <h2 class="post-title">NEW SITE LAYOUT!!1!</h2>
+        <div class="post-date">March 22, 2026 @ 8:05pm</div>
+        <div class="post-mood">current mood: 🌈 accomplished 🌈 | listening to: caramelldansen (10hr)</div>
+      </div>
+      <div class="post-body">
+        <p>AHHH DO U GUYS LIKE THE NEW LAYOUT??? i spent like <span class="highlight">ALL WEEKEND</span> working on it!! i wanted it to be extra sparkly and rainbow-y and i think i finally got it how i want it :'D</p>
+        <p>
+          things i added:<br>
+          ★ rainbow checkerboard bg!!<br>
+          ★ sparkle cursor trail!!<br>
+          ★ new blinkies!!<br>
+          ★ music player that ACTUALLY WORKS now!!<br>
+          ★ real guestbook!! pls sign it~<br>
+          ★ MORE HEARTS AND STARS lolol
+        </p>
+        <p>still working on the art page and shrines tho... those r gonna b <span class="big-text">EPIC</span> when theyre done!! stay tuned :3</p>
+      </div>
+      <div class="post-footer">
+        <div class="post-tags"><span>#site</span><span>#layout</span><span>#coding</span><span>#proud</span></div>
+        <a href="comments.html" class="post-comments-link">💬 12 comments</a>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- ──────── RIGHT SIDEBAR ──────── -->
+  <aside class="sidebar-right">
+
+    <!-- MUSIC PLAYER -->
+    <div class="sidebar-box music-player" id="music-player">
+      <div class="sidebar-title">Now Playing</div>
+
+      <div class="music-visualizer" id="music-viz">
+        <div class="music-bar idle"></div>
+        <div class="music-bar idle"></div>
+        <div class="music-bar idle"></div>
+        <div class="music-bar idle"></div>
+        <div class="music-bar idle"></div>
+        <div class="music-bar idle"></div>
+        <div class="music-bar idle"></div>
+        <div class="music-bar idle"></div>
+      </div>
+
+      <div class="now-playing-label" id="now-playing">♫ nothing playing ♫</div>
+
+      <div class="player-controls">
+        <button class="player-btn" id="btn-prev" title="Previous">⏮</button>
+        <button class="player-btn" id="btn-play" title="Play/Pause">▶</button>
+        <button class="player-btn" id="btn-next" title="Next">⏭</button>
+        <button class="player-btn" id="btn-shuffle" title="Shuffle">🔀</button>
+      </div>
+
+      <div class="progress-bar-container" id="progress-container">
+        <div class="progress-bar-fill" id="progress-fill"></div>
+      </div>
+
+      <div class="volume-row">
+        <span>🔈</span>
+        <input type="range" class="volume-slider" id="volume" min="0" max="100" value="60">
+        <span>🔊</span>
+      </div>
+
+      <div class="playlist" id="playlist"></div>
+    </div>
+
+    <!-- VISITOR COUNTER -->
+    <div class="sidebar-box">
+      <div class="visitor-counter">
+        ♥ visitors ♥<br>
+        <div class="counter-display" id="visitor-count">------</div>
+      </div>
+    </div>
+
+    <!-- GUESTBOOK -->
+    <div class="sidebar-box" id="guestbook-box">
+      <div class="sidebar-title">Guestbook ✏️</div>
+
+      <div class="gb-form">
+        <input class="gb-input" id="gb-name" type="text" placeholder="ur name~" maxlength="50">
+        <textarea class="gb-textarea" id="gb-msg" rows="3" placeholder="leave a message!! ♥" maxlength="500"></textarea>
+        <button class="gb-submit" id="gb-submit">♥ Sign!! ♥</button>
+        <div class="gb-status" id="gb-status"></div>
+      </div>
+
+      <div class="gb-entries" id="gb-entries">
+        <div style="text-align:center;color:#666;font-size:14px;padding:10px;">loading...</div>
+      </div>
+    </div>
+
+  </aside>
+
+</div>
+
+<div class="paw-trail">
+  <span>🐾</span><span>🐾</span><span>🐾</span><span>🐾</span><span>🐾</span>
+</div>
+<div class="rainbow-checker-panel"></div>
+
+<!-- FOOTER -->
+<footer class="bottom-bar">
+  <p class="heart-trail">♥ ★ ♥ ★ ♥ ★ ♥ ★ ♥ ★ ♥</p>
+  <p>&copy; 2026 <span class="site-owner">sparklecat2006</span> | made with ♥ and way 2 much css</p>
+  <p>do NOT steal my art or i WILL cry</p>
+  <p style="font-size:13px;color:#555;margin-top:8px;">best viewed in firefox | 1024x768 | pls dont sue me</p>
+  <p class="heart-trail">♥ ★ ♥ ★ ♥ ★ ♥ ★ ♥ ★ ♥</p>
+</footer>
+
+<!-- ═══════════ HIDDEN AUDIO ELEMENT ═══════════ -->
+<audio id="audio" preload="auto"></audio>
+
+<!-- ═══════════ SCRIPTS ═══════════ -->
+<script>
+/* ── SPARKLE CURSOR TRAIL ────────────────────────────────────── */
+(function() {
+  const canvas = document.getElementById('sparkle-canvas');
+  const ctx = canvas.getContext('2d');
+  let particles = [];
+
+  function resize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  const sparkleColors = ['#ff69b4','#00ffff','#bf00ff','#fff200','#ff1493','#39ff14','#ff6600','#ff00ff'];
+  const shapes = ['star','heart','circle','diamond'];
+
+  document.addEventListener('mousemove', e => {
+    for (let i = 0; i < 2; i++) {
+      particles.push({
+        x: e.clientX + (Math.random()-.5)*10,
+        y: e.clientY + (Math.random()-.5)*10,
+        vx: (Math.random()-.5)*2,
+        vy: Math.random()*-2 - 0.5,
+        life: 1,
+        decay: 0.015 + Math.random()*0.015,
+        size: 3 + Math.random()*6,
+        color: sparkleColors[Math.floor(Math.random()*sparkleColors.length)],
+        shape: shapes[Math.floor(Math.random()*shapes.length)],
+        rotation: Math.random()*Math.PI*2,
+        rotSpeed: (Math.random()-.5)*0.1,
+      });
+    }
+  });
+
+  function drawStar(cx,cy,size,color,rot) {
+    ctx.save(); ctx.translate(cx,cy); ctx.rotate(rot);
+    ctx.beginPath();
+    for(let i=0;i<5;i++){
+      const a=(i*4*Math.PI)/5 - Math.PI/2;
+      ctx[i===0?'moveTo':'lineTo'](Math.cos(a)*size,Math.sin(a)*size);
+    }
+    ctx.closePath(); ctx.fillStyle=color; ctx.fill(); ctx.restore();
+  }
+  function drawHeart(cx,cy,size,color,rot) {
+    ctx.save(); ctx.translate(cx,cy); ctx.rotate(rot);
+    const s=size*0.6;
+    ctx.beginPath();
+    ctx.moveTo(0,s*0.3);
+    ctx.bezierCurveTo(-s,-s*0.5,-s*0.5,-s,0,-s*0.4);
+    ctx.bezierCurveTo(s*0.5,-s,s,-s*0.5,0,s*0.3);
+    ctx.fillStyle=color; ctx.fill(); ctx.restore();
+  }
+  function drawDiamond(cx,cy,size,color,rot) {
+    ctx.save(); ctx.translate(cx,cy); ctx.rotate(rot);
+    ctx.beginPath();
+    ctx.moveTo(0,-size); ctx.lineTo(size*0.6,0);
+    ctx.lineTo(0,size); ctx.lineTo(-size*0.6,0);
+    ctx.closePath(); ctx.fillStyle=color; ctx.fill(); ctx.restore();
+  }
+
+  function animate() {
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    particles = particles.filter(p => p.life > 0.01);
+
+    for(const p of particles) {
+      p.x += p.vx;
+      p.y += p.vy;
+      p.vy += 0.02;
+      p.life -= p.decay;
+      p.rotation += p.rotSpeed;
+
+      const sz = Math.max(0.5, p.size * p.life);   // ← FIX: clamp to prevent negative radius
+      ctx.globalAlpha = Math.max(0, p.life);
+
+      switch(p.shape) {
+        case 'star':    drawStar(p.x,p.y,sz,p.color,p.rotation); break;
+        case 'heart':   drawHeart(p.x,p.y,sz,p.color,p.rotation); break;
+        case 'diamond': drawDiamond(p.x,p.y,sz,p.color,p.rotation); break;
+        default:
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, sz, 0, Math.PI*2);
+          ctx.fillStyle = p.color;
+          ctx.fill();
+      }
+    }
+    ctx.globalAlpha = 1;
+    requestAnimationFrame(animate);
+  }
+  animate();
+})();
+
+
+/* ── VISITOR COUNTER ─────────────────────────────────────────── */
+(async function() {
+  const el = document.getElementById('visitor-count');
+  try {
+    const res = await fetch('/api/visit', { method: 'POST' });
+    const data = await res.json();
+    el.textContent = String(data.count).padStart(6, '0');
+  } catch {
+    // Fallback: try GET
+    try {
+      const res = await fetch('/api/counter');
+      const data = await res.json();
+      el.textContent = String(data.count).padStart(6, '0');
+    } catch {
+      el.textContent = '??????';
+    }
+  }
+})();
+
+
+/* ── GUESTBOOK ───────────────────────────────────────────────── */
+(function() {
+  const entriesEl  = document.getElementById('gb-entries');
+  const nameInput  = document.getElementById('gb-name');
+  const msgInput   = document.getElementById('gb-msg');
+  const submitBtn  = document.getElementById('gb-submit');
+  const statusEl   = document.getElementById('gb-status');
+
+  async function loadEntries() {
+    try {
+      const res = await fetch('/api/guestbook');
+      const data = await res.json();
+      if (!data.entries.length) {
+        entriesEl.innerHTML = '<div style="text-align:center;color:#666;font-size:14px;padding:10px;">no entries yet... be the first!! ♥</div>';
+        return;
+      }
+      entriesEl.innerHTML = data.entries.map(e => {
+        const d = new Date(e.date);
+        const dateStr = d.toLocaleDateString('en-US', { month:'short', day:'numeric' })
+                      + ' ' + d.toLocaleTimeString('en-US', { hour:'numeric', minute:'2-digit' });
+        return `<div class="gb-entry">
+          <span class="gb-entry-name">${esc(e.name)}</span>
+          <span class="gb-entry-date">${dateStr}</span>
+          <div class="gb-entry-msg">"${esc(e.message)}"</div>
+        </div>`;
+      }).join('');
+    } catch {
+      entriesEl.innerHTML = '<div style="text-align:center;color:#ff4444;font-size:14px;padding:10px;">couldnt load guestbook :(</div>';
+    }
+  }
+
+  function esc(s) {
+    const d = document.createElement('div');
+    d.textContent = s;
+    return d.innerHTML;
+  }
+
+  submitBtn.addEventListener('click', async () => {
+    const name = nameInput.value.trim();
+    const message = msgInput.value.trim();
+    if (!name || !message) {
+      statusEl.className = 'gb-status error';
+      statusEl.textContent = 'fill in both fields silly!!';
+      return;
+    }
+    submitBtn.disabled = true;
+    statusEl.className = 'gb-status';
+    statusEl.textContent = 'signing...';
+
+    try {
+      const res = await fetch('/api/guestbook', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, message }),
+      });
+      if (!res.ok) throw new Error();
+      statusEl.className = 'gb-status success';
+      statusEl.textContent = 'tysm 4 signing!! ♥♥♥';
+      nameInput.value = '';
+      msgInput.value = '';
+      await loadEntries();
+    } catch {
+      statusEl.className = 'gb-status error';
+      statusEl.textContent = 'omg something went wrong :(';
+    } finally {
+      submitBtn.disabled = false;
+      setTimeout(() => { statusEl.textContent = ''; }, 4000);
+    }
+  });
+
+  loadEntries();
+})();
+
+
+/* ── MUSIC PLAYER ────────────────────────────────────────────── */
+(function() {
+  const audio          = document.getElementById('audio');
+  const playlistEl     = document.getElementById('playlist');
+  const nowPlayingEl   = document.getElementById('now-playing');
+  const btnPlay        = document.getElementById('btn-play');
+  const btnPrev        = document.getElementById('btn-prev');
+  const btnNext        = document.getElementById('btn-next');
+  const btnShuffle     = document.getElementById('btn-shuffle');
+  const progressFill   = document.getElementById('progress-fill');
+  const progressBar    = document.getElementById('progress-container');
+  const volumeSlider   = document.getElementById('volume');
+  const vizBars        = document.querySelectorAll('#music-viz .music-bar');
+
+  let tracks = [];
+  let currentIndex = -1;
+  let isShuffled = false;
+  let shuffleOrder = [];
+
+  audio.volume = 0.6;
+
+  // Fetch playlist from server
+  async function loadPlaylist() {
+    try {
+      const res = await fetch('/api/music');
+      const data = await res.json();
+      tracks = data.tracks;
+    } catch {
+      tracks = [];
+    }
+
+    if (!tracks.length) {
+      playlistEl.innerHTML = `<div class="playlist-empty">
+        no music yet!<br>
+        put audio files in the<br><span>./music/</span> folder :3
+      </div>`;
+      return;
+    }
+
+    playlistEl.innerHTML = tracks.map((t, i) =>
+      `<div class="playlist-item" data-index="${i}">${esc(t.title)}</div>`
+    ).join('');
+
+    playlistEl.addEventListener('click', e => {
+      const item = e.target.closest('.playlist-item');
+      if (item) playTrack(parseInt(item.dataset.index));
+    });
+
+    buildShuffleOrder();
+  }
+
+  function esc(s) {
+    const d = document.createElement('div');
+    d.textContent = s;
+    return d.innerHTML;
+  }
+
+  function buildShuffleOrder() {
+    shuffleOrder = tracks.map((_,i) => i);
+    for (let i = shuffleOrder.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffleOrder[i], shuffleOrder[j]] = [shuffleOrder[j], shuffleOrder[i]];
+    }
+  }
+
+  function playTrack(index) {
+    if (!tracks.length) return;
+    currentIndex = index;
+    const track = tracks[index];
+    audio.src = track.url;
+    audio.play().catch(() => {});
+    nowPlayingEl.textContent = '▶ ' + track.title;
+
+    document.querySelectorAll('.playlist-item').forEach((el, i) => {
+      el.classList.toggle('active', i === index);
+    });
+
+    btnPlay.textContent = '⏸';
+    setVizActive(true);
+  }
+
+  function setVizActive(active) {
+    vizBars.forEach(bar => {
+      if (active) {
+        bar.classList.remove('idle');
+        // Randomize heights via JS for "reactive" feel
+        const h = 8 + Math.random() * 22;
+        bar.style.height = h + 'px';
+      } else {
+        bar.classList.add('idle');
+        bar.style.height = '';
+      }
+    });
+  }
+
+  // Animate viz bars while playing
+  let vizInterval;
+  function startVizAnimation() {
+    stopVizAnimation();
+    vizInterval = setInterval(() => {
+      if (!audio.paused) {
+        vizBars.forEach(bar => {
+          bar.style.height = (6 + Math.random() * 26) + 'px';
+        });
+      }
+    }, 180);
+  }
+  function stopVizAnimation() {
+    clearInterval(vizInterval);
+  }
+
+  btnPlay.addEventListener('click', () => {
+    if (!tracks.length) return;
+    if (currentIndex === -1) { playTrack(0); startVizAnimation(); return; }
+    if (audio.paused) {
+      audio.play().catch(() => {});
+      btnPlay.textContent = '⏸';
+      setVizActive(true);
+      startVizAnimation();
+    } else {
+      audio.pause();
+      btnPlay.textContent = '▶';
+      setVizActive(false);
+      stopVizAnimation();
+    }
+  });
+
+  btnNext.addEventListener('click', () => {
+    if (!tracks.length) return;
+    let next;
+    if (isShuffled) {
+      const si = shuffleOrder.indexOf(currentIndex);
+      next = shuffleOrder[(si + 1) % shuffleOrder.length];
+    } else {
+      next = (currentIndex + 1) % tracks.length;
+    }
+    playTrack(next);
+  });
+
+  btnPrev.addEventListener('click', () => {
+    if (!tracks.length) return;
+    // If more than 3s in, restart; otherwise go previous
+    if (audio.currentTime > 3) { audio.currentTime = 0; return; }
+    let prev;
+    if (isShuffled) {
+      const si = shuffleOrder.indexOf(currentIndex);
+      prev = shuffleOrder[(si - 1 + shuffleOrder.length) % shuffleOrder.length];
+    } else {
+      prev = (currentIndex - 1 + tracks.length) % tracks.length;
+    }
+    playTrack(prev);
+  });
+
+  btnShuffle.addEventListener('click', () => {
+    isShuffled = !isShuffled;
+    btnShuffle.classList.toggle('active', isShuffled);
+    if (isShuffled) buildShuffleOrder();
+  });
+
+  // Progress bar
+  audio.addEventListener('timeupdate', () => {
+    if (audio.duration) {
+      progressFill.style.width = (audio.currentTime / audio.duration * 100) + '%';
+    }
+  });
+
+  progressBar.addEventListener('click', e => {
+    if (!audio.duration) return;
+    const rect = progressBar.getBoundingClientRect();
+    const pct = (e.clientX - rect.left) / rect.width;
+    audio.currentTime = pct * audio.duration;
+  });
+
+  // Volume
+  volumeSlider.addEventListener('input', () => {
+    audio.volume = volumeSlider.value / 100;
+  });
+
+  // Auto-advance
+  audio.addEventListener('ended', () => {
+    btnNext.click();
+  });
+
+  audio.addEventListener('play',  () => startVizAnimation());
+  audio.addEventListener('pause', () => { stopVizAnimation(); setVizActive(false); });
+
+  loadPlaylist();
+})();
+</script>
+
+</body>
+</html>

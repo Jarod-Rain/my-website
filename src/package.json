@@ -1,0 +1,12 @@
+{
+  "name": "rainbow-sparkle-pawz",
+  "version": "1.0.0",
+  "description": "~*+xX R4iNb0w SpArKlE P4wZ Xx+*~",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
