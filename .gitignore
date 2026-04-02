@@ -1,4 +1,5 @@
 node_modules/
-src/data/
-src/music/
+data/
+music/
 *.tar.gz
+deploy.sh
