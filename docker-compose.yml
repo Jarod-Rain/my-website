@@ -3,8 +3,8 @@ services:
     build: .
     container_name: rainbow-sparkle-pawz
     restart: unless-stopped
-    ports:
-      - "3000:3000"
+    expose:
+      - "3000"
     volumes:
       - ./data:/app/data
       - ./music:/app/music
@@ -12,3 +12,9 @@ services:
       - ./server.js:/app/server.js
     environment:
       - PORT=3000
+    networks:
+      - web
+
+networks:
+  web:
+    external: true
