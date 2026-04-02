@@ -3,3 +3,4 @@ data
 music
 .git
 *.tar.gz
+deploy.ps1

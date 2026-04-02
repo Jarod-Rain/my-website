@@ -6,9 +6,9 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      # Persist guestbook entries & visitor counter across restarts
       - ./data:/app/data
-      # Mount your music folder — drop mp3/ogg/flac/etc files in here
       - ./music:/app/music
+      - ./public:/app/public
+      - ./server.js:/app/server.js
     environment:
       - PORT=3000
